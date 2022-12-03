@@ -1,0 +1,196 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 1px; 
+}
+html{
+    scroll-behavior: smooth;
+}
+/*css variables*/
+:root{
+    --navbar-height: 59px;
+}
+/* navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -60px;
+    left: -52px;
+}
+/* navigation bar:logo and image */
+#logo{
+    margin: 34px 45px;
+    top: 0px;
+}
+#logo img{
+    height: 110px;
+    margin: 34px 45px;
+    top: 0px;
+}
+/*navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: rgba(128, 128, 128, 0.904);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    height: 20px;
+
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Alkalami', serif;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 545px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('../bg2.3.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 128%;
+    width: 100%;;
+    z-index: -1;
+    opacity: 1.0;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Alkalami', serif;
+}
+#home p{
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: 'Dancing Script', cursive;
+}
+/* services Section */
+#services{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+}
+#services-container h1{
+color: white;
+font-family: 'Alkalami', serif;
+}
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: url('../bg4.6.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 97.4%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 6px;
+    border-radius: 23px;
+    background-color: rgb(240, 210, 215);
+}
+#services .box img{
+    height: 250px;
+    margin: auto;
+    display: block;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Alkalami', serif;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact h1{
+    position: relative;
+    color: white;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../bg4.6.jpg')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    width: 40%;
+    font-size: 1.3rem;
+    font-family: 'Alkalami', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
